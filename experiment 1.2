@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class SimpleArithmetic {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter the first number: ");
+        String strNum1 = scanner.nextLine();
+
+        System.out.println("Enter the second number: ");
+        String strNum2 = scanner.nextLine();
+
+        Integer num1 = Integer.parseInt(strNum1);
+        Integer num2 = Integer.parseInt(strNum2);
+
+        System.out.println("Addition: " + (num1 + num2));
+        System.out.println("Subtraction: " + (num1 - num2));
+        System.out.println("Multiplication: " + (num1 * num2));
+        System.out.println("Division: " + (num1 / num2));
+
+        scanner.close();
+    }
+}
